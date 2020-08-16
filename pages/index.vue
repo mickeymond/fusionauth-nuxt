@@ -1,9 +1,7 @@
 <template>
   <section class="section">
     <pre>
-      <code>
-        {{ JSON.stringify($auth.user, null, 4) }}
-      </code>
+      {{ $auth.user }}
     </pre>
   </section>
 </template>

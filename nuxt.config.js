@@ -61,10 +61,10 @@ export default {
     strategies: {
       fusionauth: {
         _scheme: 'oauth2',
-        authorization_endpoint: 'http://52.188.120.207:9011/oauth2/authorize',
-        userinfo_endpoint: 'http://52.188.120.207:9011/oauth2/userinfo',
+        authorization_endpoint: 'https://auth.mickeymond.tools/oauth2/authorize',
+        userinfo_endpoint: 'https://auth.mickeymond.tools/oauth2/userinfo',
         scope: ['openid', 'profile', 'email'],
-        access_token_endpoint: 'http://52.188.120.207:9011/oauth2/token',
+        access_token_endpoint: 'https://auth.mickeymond.tools/oauth2/token',
         access_type: 'offline',
         response_type: 'code',
         token_type: 'Bearer',

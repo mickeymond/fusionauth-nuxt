@@ -1,6 +1,10 @@
 <template>
   <section>
-
+    <b-loading
+      :is-full-page="true"
+      :active="true"
+      :can-cancel="false"
+    />
   </section>
 </template>
 
@@ -14,7 +18,7 @@
           console.log(this.$auth);
           this.$auth.loginWith('fusionauth');
         }
-      }, 1000)
+      }, 2000)
     }
   }
 </script>
