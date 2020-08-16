@@ -14,7 +14,7 @@
           console.log(this.$auth);
           this.$auth.loginWith('fusionauth');
         }
-      }, 3000)
+      }, 1000)
     }
   }
 </script>
