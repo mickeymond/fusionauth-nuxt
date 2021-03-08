@@ -59,16 +59,16 @@ export default {
   ],
   auth: {
     strategies: {
-      fusionauth: {
+      oauth2: {
         _scheme: 'oauth2',
-        authorization_endpoint: 'https://auth.mickeymond.tools/oauth2/authorize',
-        userinfo_endpoint: 'https://auth.mickeymond.tools/oauth2/userinfo',
-        scope: ['openid', 'profile', 'email'],
-        access_token_endpoint: 'https://auth.mickeymond.tools/oauth2/token',
+        authorization_endpoint: 'http://localhost:4000/oauth/authorize',
+        userinfo_endpoint: 'http://localhost:4000/oauth/userinfo',
+        scope: ['profile'],
+        access_token_endpoint: 'http://localhost:4000/oauth/token',
         access_type: 'offline',
         response_type: 'code',
         token_type: 'Bearer',
-        client_id: '63f72af0-75d1-4cab-a41f-e57f30097014',
+        client_id: '38a6c291cd9b1d23f5eee131b9c67c41',
         token_key: 'access_token',
         grant_type: 'authorization_code',
       }
