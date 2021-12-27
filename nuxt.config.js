@@ -3,7 +3,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  ssr: false,
+  ssr: true,
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -60,11 +60,17 @@ export default {
       oauth2: {
         _scheme: "oauth2",
         authorization_endpoint:
-          "https://shopa-auth.herokuapp.com/oauth/authorize",
-        userinfo_endpoint: "https://shopa-auth.herokuapp.com/oauth/userinfo",
-        scope: ["profile"],
-        access_token_endpoint: "https://shopa-auth.herokuapp.com/oauth/token",
-        client_id: "67d3c69793457a5e0b54102d51631989"
+          "https://mickeymond-fusionauth.herokuapp.com/oauth2/authorize",
+        userinfo_endpoint:
+          "https://mickeymond-fusionauth.herokuapp.com/oauth2/userinfo",
+        // scope: ["openid", "offline_access"],
+        access_token_endpoint:
+          "https://mickeymond-fusionauth.herokuapp.com/oauth2/token",
+        logout: "https://mickeymond-fusionauth.herokuapp.com/oauth2/logout",
+        client_id: "3c219e58-ed0e-4b18-ad48-f4f92793ae32",
+        // client_secret: "AZIk87Qi6IWxFux-alaD1X_EFWJrIc1X8pjMJJU0t6o",
+        response_type: "code",
+        grant_type: "authorization_code"
       }
     }
   },
